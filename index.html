@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>For those about to yolo...</h1>
+    <form class="form" action="index.html" method="post" >
+      <input type="text" name="name" value="" placeholder="full name" id="name">
+      <input type="text" name="name" value="" placeholder="email" id="email">
+      <input type="text" name="name" value="" placeholder="phone number" id="number">
+      <input type="text" name="name" value="" placeholder="twitter" id="twitter">
+      <input type="text" name="name" value="" placeholder="linkedIn" id="linkedin">
+      <input type="submit" name="name" value="Submit" id="submit">
+    </form>
+    <h1>We Salute You:</h1>
+    <section>
+    </section>
+    <script type="text/template" id="collection">
+      <% _.forEach(users, function(user){ %>
+      <%  if((typeof user.name === "string") && (user.name.length > 0)){ %>
+      <li><h2><%= user.name %></h2> <h3><%= user.email %></h3></li>
+      <% } %>
+      <% }); %>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+    <script src="app/main.js"></script>
+    <script src="Models/model.js"></script>
+    <script src="Collections/collection.js"></script>
+    <script src="Views/view.js"></script>
+  </body>
+</html>

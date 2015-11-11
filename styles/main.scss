@@ -1,0 +1,60 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+
+body{
+  @include outer-container(100%);
+  background-image: url("http://wallpapercave.com/wp/duNf8lC.jpg");
+  background-repeat: round;
+  background-color: rgba(0, 0, 0, .1);
+
+  h1:first-of-type{
+    color: forestgreen;
+    text-align: center;
+  }
+
+  form{
+    @include span-columns(4);
+    @include shift(4);
+    margin-bottom: 50px;
+    input{
+      @include span-columns(12);
+      margin-bottom: 15px;
+
+      &:last-of-type{
+        @include span-columns(3);
+        @include shift(4.5);
+      }
+    }
+  }
+
+  h1{
+    @include span-columns(4);
+    @include shift(4);
+    color: red;
+    text-align: center;
+    text-shadow: 3px -12px black;
+  }
+
+  section{
+    @include span-columns(4);
+    @include shift(3.7);
+    text-align: left;
+
+    ul{
+      @include span-columns(12);
+      li{
+        @include span-columns(12);
+        h2{
+        font-size: 25px;
+        color: white;
+        text-shadow: 2px 3px black;
+        }
+        h3{
+        font-size: 18px;
+        color: white;
+        text-shadow: 2px 3px black;
+        }
+      }
+    }
+  }
+}

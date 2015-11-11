@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("http://wallpapercave.com/wp/duNf8lC.jpg");
+  background-repeat: round;
+  background-color: rgba(0, 0, 0, 0.1); }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+  body h1:first-of-type {
+    color: forestgreen;
+    text-align: center; }
+  body form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 34.11922%;
+    margin-bottom: 50px; }
+    body form:last-child {
+      margin-right: 0; }
+    body form input {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 15px; }
+      body form input:last-child {
+        margin-right: 0; }
+      body form input:last-of-type {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        margin-left: 38.38412%; }
+        body form input:last-of-type:last-child {
+          margin-right: 0; }
+  body h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 34.11922%;
+    color: red;
+    text-align: center;
+    text-shadow: 3px -12px black; }
+    body h1:last-child {
+      margin-right: 0; }
+  body section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 31.56028%;
+    text-align: left; }
+    body section:last-child {
+      margin-right: 0; }
+    body section ul {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      body section ul:last-child {
+        margin-right: 0; }
+      body section ul li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        body section ul li:last-child {
+          margin-right: 0; }
+        body section ul li h2 {
+          font-size: 25px;
+          color: white;
+          text-shadow: 2px 3px black; }
+        body section ul li h3 {
+          font-size: 18px;
+          color: white;
+          text-shadow: 2px 3px black; }
